@@ -59,6 +59,7 @@
     <Compile Include="Assets\Mirror\Transports\KCP\MirrorTransport\KcpTransport.cs" />
     <Compile Include="Assets\Mirror\Transports\Latency\LatencySimulation.cs" />
     <Compile Include="Assets\Mirror\Transports\Telepathy\TelepathyTransport.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -654,13 +655,41 @@
       <Project>{0B72B801-E0B5-E181-6D54-9C8FFF785FB6}</Project>
       <Name>Unity.RenderPipelines.Core.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Authenticators.csproj">
+      <Project>{C33079C1-8370-CD86-0DC4-17E92F521188}</Project>
+      <Name>Mirror.Authenticators</Name>
+    </ProjectReference>
+    <ProjectReference Include="MiddlewareTransport.csproj">
+      <Project>{76394966-F596-656A-40AF-3D7CECE8F995}</Project>
+      <Name>MiddlewareTransport</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Components.csproj">
+      <Project>{14A3674E-CE98-8532-AB03-1E63D489FF84}</Project>
+      <Name>Mirror.Components</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{79BCD531-A572-FD1D-D758-B42C0102C124}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.csproj">
+      <Project>{24A286ED-5D1C-C498-200D-CFA312931A26}</Project>
+      <Name>Mirror.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
+      <Project>{621E8567-C816-DA11-B910-93263287D472}</Project>
+      <Name>Mirror.CompilerSymbols</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{06624891-C2AB-5BBC-9FCD-27D3AB79E516}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{79CC43CD-8C31-AF68-FB26-A5ACEBD11CCE}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
+    <ProjectReference Include="where-allocations.csproj">
+      <Project>{3A711003-328D-998C-E1E4-023F00608160}</Project>
+      <Name>where-allocations</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj">
       <Project>{2DD77141-4456-4C9B-E238-1F61DF9170A5}</Project>
@@ -678,6 +707,10 @@
       <Project>{B139E568-8700-49D6-9F72-5A2C883450F2}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
+    <ProjectReference Include="Telepathy.csproj">
+      <Project>{064BE0B9-4FE2-5230-27FA-D0ABF8BAAA93}</Project>
+      <Name>Telepathy</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{A567EF21-307F-5E2B-1D26-83322C242229}</Project>
       <Name>Unity.Rider.Editor</Name>
@@ -686,9 +719,25 @@
       <Project>{DC98A6AA-82BE-E159-9D55-160AE7F7E675}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.csproj">
+      <Project>{915811BC-4071-A0F4-2596-237A10765B79}</Project>
+      <Name>Mirror</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Editor.csproj">
+      <Project>{35AF428E-889D-1BE8-F82F-8EB5C55E9176}</Project>
+      <Name>Mirror.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="kcp2k.csproj">
+      <Project>{573035E5-FAE1-91FE-2EBF-E4AE0E2D0020}</Project>
+      <Name>kcp2k</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{444C1739-EE1A-50E2-6C51-B9C42E81E9DE}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleWebTransport.csproj">
+      <Project>{3CD75EAB-73AC-B29B-7E01-340EAE3DF515}</Project>
+      <Name>SimpleWebTransport</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
       <Project>{2C76D1FF-7997-6B43-9F9D-5C6D97B3BFBE}</Project>
@@ -706,61 +755,13 @@
       <Project>{54A17569-FE60-9E5A-53CF-041ED5E30A92}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{DF71456C-31DA-07D6-F49A-19E6A6620349}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Authenticators.csproj">
-      <Project>{C33079C1-8370-CD86-0DC4-17E92F521188}</Project>
-      <Name>Mirror.Authenticators</Name>
-    </ProjectReference>
-    <ProjectReference Include="MiddlewareTransport.csproj">
-      <Project>{76394966-F596-656A-40AF-3D7CECE8F995}</Project>
-      <Name>MiddlewareTransport</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{14A3674E-CE98-8532-AB03-1E63D489FF84}</Project>
-      <Name>Mirror.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{24A286ED-5D1C-C498-200D-CFA312931A26}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{621E8567-C816-DA11-B910-93263287D472}</Project>
-      <Name>Mirror.CompilerSymbols</Name>
-    </ProjectReference>
-    <ProjectReference Include="where-allocations.csproj">
-      <Project>{3A711003-328D-998C-E1E4-023F00608160}</Project>
-      <Name>where-allocations</Name>
-    </ProjectReference>
-    <ProjectReference Include="Telepathy.csproj">
-      <Project>{064BE0B9-4FE2-5230-27FA-D0ABF8BAAA93}</Project>
-      <Name>Telepathy</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.csproj">
-      <Project>{915811BC-4071-A0F4-2596-237A10765B79}</Project>
-      <Name>Mirror</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{35AF428E-889D-1BE8-F82F-8EB5C55E9176}</Project>
-      <Name>Mirror.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="kcp2k.csproj">
-      <Project>{573035E5-FAE1-91FE-2EBF-E4AE0E2D0020}</Project>
-      <Name>kcp2k</Name>
-    </ProjectReference>
-    <ProjectReference Include="SimpleWebTransport.csproj">
-      <Project>{3CD75EAB-73AC-B29B-7E01-340EAE3DF515}</Project>
-      <Name>SimpleWebTransport</Name>
-    </ProjectReference>
     <ProjectReference Include="MultiplexTransport.csproj">
       <Project>{DF57F16B-A7DE-5B61-FF9A-DC845712E5E3}</Project>
       <Name>MultiplexTransport</Name>
     </ProjectReference>
-    <ProjectReference Include="ParrelSync.csproj">
-      <Project>{79CC43CD-8C31-AF68-FB26-A5ACEBD11CCE}</Project>
-      <Name>ParrelSync</Name>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{DF71456C-31DA-07D6-F49A-19E6A6620349}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
