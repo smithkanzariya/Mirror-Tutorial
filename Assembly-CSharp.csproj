@@ -59,6 +59,7 @@
     <Compile Include="Assets\Mirror\Transports\KCP\MirrorTransport\KcpTransport.cs" />
     <Compile Include="Assets\Mirror\Transports\Latency\LatencySimulation.cs" />
     <Compile Include="Assets\Mirror\Transports\Telepathy\TelepathyTransport.cs" />
+    <Compile Include="Assets\Scripts\MyNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
